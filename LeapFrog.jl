@@ -125,5 +125,6 @@ plot!(P2[:,1], P2[:,2], seriestype = :scatter, markerstrokecolor = :blue,markerc
 plot!(P3[:,1], P3[:,2], seriestype = :scatter, markerstrokecolor = :orange, markercolor = :orange)
 plot!(P4[:,1], P4[:,2], seriestype = :scatter, markerstrokecolor = :orange, markercolor = :orange, legend = false, xaxis = ("Distance"), yaxis = ("Radial Location"))
 
+savefig(leepfrog)
 
 end
