@@ -129,7 +129,8 @@ plot!(P4[:,1], P4[:,2], seriestype = :scatter, markerstrokecolor = :orange, mark
 
 display(LFplot)
 
-savefig("LeapFrog.png")
+#Used to save plot
+#savefig("LeapFrog.png")
 
 
 end
