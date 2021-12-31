@@ -121,7 +121,7 @@ while i <= itterations
 end
 
 #Plots the position arrays
-LFplot = plot(P1[:,1], P1[:,2], seriestype = :scatter, title = "Leap Frog", markerstrokecolor = :blue,markercolor = :blue)
+LFplot = plot(P1[:,1], P1[:,2], seriestype = :scatter, markerstrokecolor = :blue,markercolor = :blue)
 plot!(P2[:,1], P2[:,2], seriestype = :scatter, markerstrokecolor = :blue,markercolor = :blue)
 plot!(P3[:,1], P3[:,2], seriestype = :scatter, markerstrokecolor = :orange, markercolor = :orange)
 plot!(P4[:,1], P4[:,2], seriestype = :scatter, markerstrokecolor = :orange, markercolor = :orange, legend = false, xaxis = ("Distance"), yaxis = ("Radial Location"))
