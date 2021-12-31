@@ -3,6 +3,7 @@ using LinearAlgebra
 #This library containts the necessary functions for graphing, specifically scatter plots
 using Plots
 
+
 #=
 The leapFrog function outputs a plot showing the varrying x and y coordinates of
 four vortecies that start equadistant from each other in the shape of a square. The
@@ -120,11 +121,13 @@ while i <= itterations
 end
 
 #Plots the position arrays
-plot(P1[:,1], P1[:,2], seriestype = :scatter, title = "Leap Frog", markerstrokecolor = :blue,markercolor = :blue)
+LFplot = plot(P1[:,1], P1[:,2], seriestype = :scatter, title = "Leap Frog", markerstrokecolor = :blue,markercolor = :blue)
 plot!(P2[:,1], P2[:,2], seriestype = :scatter, markerstrokecolor = :blue,markercolor = :blue)
 plot!(P3[:,1], P3[:,2], seriestype = :scatter, markerstrokecolor = :orange, markercolor = :orange)
 plot!(P4[:,1], P4[:,2], seriestype = :scatter, markerstrokecolor = :orange, markercolor = :orange, legend = false, xaxis = ("Distance"), yaxis = ("Radial Location"))
 
-savefig(leepfrog)
+display(LFplot)
+
+savefig("LeapFrog.png")
 
 end
