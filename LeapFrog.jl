@@ -2,12 +2,13 @@
 using LinearAlgebra
 #This library containts the necessary functions for graphing, specifically scatter plots
 using Plots
-
+using DelimitedFiles
 
 #=
 The leapFrog function outputs a plot showing the varrying x and y coordinates of
 four vortecies that start equadistant from each other in the shape of a square. The
 top two verticies rotate counterclockwise while the bottom two rotate clockwise.
+This setup models the 2D crossectional view of two vortex rings
 The inputs necessary for the function to work are as follows
 1) Circulation in the form of an 1X3 array, [x,y,z]
 2) Initial distance betweeb vortices,i.e. side length of the square.
@@ -129,5 +130,6 @@ plot!(P4[:,1], P4[:,2], seriestype = :scatter, markerstrokecolor = :orange, mark
 display(LFplot)
 
 savefig("LeapFrog.png")
+
 
 end
